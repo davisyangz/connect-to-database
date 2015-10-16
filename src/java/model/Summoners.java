@@ -5,13 +5,13 @@ public class Summoners {
     
     private int MonsterID;
     private String MonsterName;
-    private String property;
+    private String Property;
     private int MLevel;
 
     public Summoners() {
         this.MonsterID = 0;
         this.MonsterName = "";
-        this.property = "";
+        this.Property = "";
         this.MLevel = 0;
     }
     
@@ -19,7 +19,7 @@ public class Summoners {
     public Summoners(int MonsterID, String MonsterName, String property, int MLevel) {
         this.MonsterID = MonsterID;
         this.MonsterName = MonsterName;
-        this.property = property;
+        this.Property = property;
         this.MLevel = MLevel;
     }
 
@@ -40,11 +40,11 @@ public class Summoners {
     }
 
     public String getProperty() {
-        return property;
+        return Property;
     }
 
     public void setProperty(String property) {
-        this.property = property;
+        this.Property = property;
     }
 
     public int getMLevel() {
@@ -57,7 +57,7 @@ public class Summoners {
 
     @Override
     public String toString() {
-        return "Summoners{" + "MonsterID=" + MonsterID + ", MonsterName=" + MonsterName + ", property=" + property + ", MLevel=" + MLevel + '}';
+        return "Summoners{" + "MonsterID=" + MonsterID + ", MonsterName=" + MonsterName + ", property=" + Property + ", MLevel=" + MLevel + '}';
     }
     
     

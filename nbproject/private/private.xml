@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/web/add.jsp</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/controller/AddServlet.java</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/dbhelpers/addquery.java</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/model/Summoners.java</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/web/read.jsp</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/web/index.jsp</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/controller/DeleteServlet.java</file>
+        </group>
+    </open-files>
+</project-private>

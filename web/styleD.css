@@ -1,0 +1,42 @@
+th{
+	text-align:left;
+	background-color:#FFFF99;
+	color:#696969;
+	border:3pt #FFFFFF;
+}
+
+table{
+background-color:#F08080;
+color:#FFFFFF;
+}
+
+table,th,td{
+    border-collapse: collapse;
+}
+table,th,td {
+   border: 1px solid white;
+   height:30px
+}
+body{
+	background-color:#D2B48C;
+}
+td,th{
+	width:30%;
+}
+
+h1{
+	color:white;
+	text-align: center;
+}
+Label{
+	display: inline-block;
+	color:white;
+	float: left;
+	clear: left;
+	text-align:right;
+	width:600px;
+}
+input{
+	display: inline-block;
+	float:left;
+}

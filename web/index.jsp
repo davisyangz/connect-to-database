@@ -10,10 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Monsters</title>
+        <link rel="stylesheet" type="text/css" href="styleD.css"/>
     </head>
     <body>
+       
         <h1>My monster in summoners war</h1>
         
         <a href="read">View all my monsters</a>
+      
+        
     </body>
 </html>

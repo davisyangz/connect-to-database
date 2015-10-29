@@ -58,7 +58,7 @@ public class readquery {
         }
         public String getHTMLtable(){
             String table="";
-            table+="<table border=1>";
+            table+="<table>";
             
         try {
             while(this.results.next()){
@@ -83,6 +83,10 @@ public class readquery {
                 
                 table+="<td>";
                 table+=monster.getMLevel();
+                table+="</td>";
+                
+                table+="<td>";
+                table+="<a href=delete?MonsterID=" + monster.getMonsterID() + "> Delete </a>";
                 table+="</td>";
                 
                 table+="</tr>";

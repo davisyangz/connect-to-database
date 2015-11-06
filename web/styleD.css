@@ -24,7 +24,7 @@ td,th{
 	width:30%;
 }
 
-h1{
+h1{ 
 	color:white;
 	text-align: center;
 }
@@ -40,3 +40,11 @@ input{
 	display: inline-block;
 	float:left;
 }
+.wrap{ text-align: center; 
+       width: 90%;
+       margin:0 auto; 
+       border: 1px solid black
+}
+.header{text-align: center; padding:25px}
+.headerText{ text-align: center;float:left; height:50px; padding-top: 80px; padding-left:400px;}
+.navlist{ display:inline; list-style-type: none; padding-right: 20px;}

@@ -11,6 +11,10 @@
     <% String table=(String) request.getAttribute("table"); %>
     
     <body>
+        <div class="wrap">
+            <%@include file="includes/header.jsp" %>
+            <%@include file="includes/menu.jsp" %>
+            <div class="main">
         <h1>Yang's monster</h1>
         
         <table>
@@ -29,7 +33,9 @@
         <a href ="add">Add a new monster</a>
         <br><br>
         <a href="search.jsp">Search Monsters</a>
-        
+        </div>
+          <%@include file="includes/footer.jsp" %>
+</div>
         
     </body>
 </html>

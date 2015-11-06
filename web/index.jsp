@@ -17,6 +17,9 @@
         <h1>My monster in summoners war</h1>
         
         <a href="read">View all my monsters</a>
+        <br><br>
+        <a href="search.jsp">Search Monsters</a>
+        
       
         
     </body>

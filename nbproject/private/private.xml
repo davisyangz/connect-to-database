@@ -5,11 +5,10 @@
         <group>
             <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/web/add.jsp</file>
             <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/controller/AddServlet.java</file>
-            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/dbhelpers/addquery.java</file>
-            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/model/Summoners.java</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/dbhelpers/readquery.java</file>
             <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/web/read.jsp</file>
+            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/dbhelpers/deletequery.java</file>
             <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/web/index.jsp</file>
-            <file>file:/C:/Users/Zheng/Documents/NetBeansProjects/summonerApp/src/java/controller/DeleteServlet.java</file>
         </group>
     </open-files>
 </project-private>

@@ -27,7 +27,8 @@
         <br><br>
         
         <a href ="add">Add a new monster</a>
-        
+        <br><br>
+        <a href="search.jsp">Search Monsters</a>
         
         
     </body>

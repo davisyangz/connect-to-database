@@ -1,5 +1,5 @@
-
 package dbhelpers;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -12,22 +12,22 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Summoners;
 
-public class readquery {
+public class searchquery {
     private Connection conn;
     private ResultSet results;
-     
-    public readquery(){
-        Properties props=new Properties();
+    
+    public searchquery(){
+    Properties props=new Properties();
         InputStream instr=getClass().getResourceAsStream("dbcon.properties");
         try {
             props.load(instr);
         } catch (IOException ex) {
-            Logger.getLogger(readquery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(searchquery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             instr.close();
         } catch (IOException ex) {
-            Logger.getLogger(readquery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(searchquery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         String driver=props.getProperty("driver.name");
@@ -37,26 +37,29 @@ public class readquery {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(readquery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(searchquery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             conn=DriverManager.getConnection(url, username, passwd);
         } catch (SQLException ex) {
-            Logger.getLogger(readquery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(searchquery.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
-        public void doRead(){
+}
+    
+    public void doSearch(String MonsterName){
+        
         try {
-            String query="select * from SUMMONMONSTER ORDER BY MonsterID ASC";
-            
+            String query="SELECT * FROM SUMMONMONSTER WHERE UPPER(MonsterName) LIKE ? ORDER BY MonsterID ASC";
             PreparedStatement ps=conn.prepareStatement(query);
+            ps.setString(1, "%" + MonsterName.toUpperCase() + "%");
             this.results=ps.executeQuery();
         } catch (SQLException ex) {
-            Logger.getLogger(readquery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(searchquery.class.getName()).log(Level.SEVERE, null, ex);
         }
-            
-        }
-        public String getHTMLtable(){
+        
+    }
+    
+    public String getHTMLtable(){
             String table="";
             table+="<table>";
             
@@ -94,7 +97,7 @@ public class readquery {
                 
             }
         } catch (SQLException ex) {
-            Logger.getLogger(readquery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(searchquery.class.getName()).log(Level.SEVERE, null, ex);
         }
             table+="</table>";
             return table;
